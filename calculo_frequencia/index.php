@@ -1,3 +1,32 @@
+<?php
+                    //verificar o envio do formulario
+                        
+                        if(isset($_GET["enviar"])){
+                            //recebendo os potes.
+                            $txtNome = $_GET["txt-nome"];
+                            $txtCurso = $_GET["txt-curso"];
+                            $txtCargaHorariaDiaria = floatval($_GET["txt-carga-horaria-diaria"]);
+                            $txtCargaHoraria = floatval($_GET["txt-carga-horaria"]);
+                            $txtFrequenciaObrigatoria = floatval($_GET["txt-frequencia-obrigatoria"]);
+                    
+                            //impedir o uso de caracteres
+                            if($txtCargaHoraria>0 && $txtCargaHorariaDiaria>0 && $txtFrequenciaObrigatoria>0){
+                            //criar novas variaveis para guardar os resultados obtidos a partir das informações
+                            $diasTotaisDoCurso=$txtCargaHoraria/$txtCargaHorariaDiaria;
+                            $quantidadeDeFaltas=$diasTotaisDoCurso*((100-$txtFrequenciaObrigatoria)/100);
+
+                            //criar nova variavel para guardar o resultado (frase) que sera exibida
+                            $frase = "Ola ".$txtNome." bem-vindis ao curso ".$txtCurso.", a carga horaria total deste curso ";
+                            $frase .="é de ".$txtCargaHoraria." horas. A carga horaria por dia é de " .$txtCargaHorariaDiaria. " horas, o que";
+                            $frase .="equivale a ".$diasTotaisDoCurso." dias de cursos no total. A frequência obrigatoria";
+                            $frase .="é de ".$txtFrequenciaObrigatoria. ", ou seja, você poderá faltar no total ".$quantidadeDeFaltas." dias.";
+                            
+                            }else{$frase=" valores invalidos, ou campos nao prenchidos";}
+                        }else{
+                            $frase =" informe os dados no formulario acima";
+                        }
+                    ?>
+
 <!DOCTYPE>
 <html>
     <head>
@@ -15,7 +44,7 @@
                 <div class="container">
                     <h1>Cálculo de freqência</h1>
 
-                    <form action=""id="formulario">
+                    <form action="#" name="formulario" id="formulario" method="GET">
                         <label for="">Nome completo</label>
                         <input type="text" name="txt-nome" id="txt-nome" size="100px" placeholder="digite o nome completo">
 
@@ -31,16 +60,14 @@
                         <label for="">Frequencia obrigatoria(%) </label>
                         <input type="text" name="txt-frequencia-obrigatoria" id="txt-frequencia-obrigatoria" size="10px" placeholder="digite os valores"><span>%</span>
 
-                        <input type="submit" value="calcular" id="enviar">
+                        <input type="submit" value="calcular" name="enviar" id="enviar">
 
                         <br><br>
-                        <span class="resultado"></span>
-                        <span class="resultado"></span>
-                        <span class="resultado"></span>
+                        <span class="resultado"><?php echo $frase;?></span>
+                        
                     </form>
-                    <?php
-                        if(isset($_GET["txt-carga-horaria-diaria"])and($_GET["txt-carga-horaria"]) ){}else{echo"informe os horarios."}
-                    ?>
+                    
+
                 </div>
             </section>
             <?php

@@ -1,0 +1,37 @@
+main{
+    color: rgb(199, 130, 1);
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    height:200px;
+    width: 100%;
+    background-color:rgb(99, 8, 185);
+    line-height: 200px;
+    font-size: 38px;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+footer{
+    height:300px;
+    width: 100%;
+    background-color: rgb(99, 8, 185);
+    line-height:300px;
+    font-size: 38px;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+section{
+    color: black;
+    font-size: 18px;
+    background-color:rgba(255, 166, 0, 0.349);
+    padding:30px ; 
+}
+
+
+div{  
+    margin: 30px;
+}

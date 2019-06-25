@@ -41,7 +41,7 @@ footer{
 
 h1{
     font-size: 22px;
-    background: -webkit-linear-gradient(rgb(255, 254, 198),rgb(150, 94, 255));
+    background: -webkit-linear-gradient(rgb(180, 180, 180),rgb(10, 10, 10));
     background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

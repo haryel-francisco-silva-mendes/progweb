@@ -19,15 +19,15 @@ $hora = date('H');
 echo "teste".$hora;
 
 if($hora <= 12 ){
-    $fundo = "dia";
+    $fundo = "dia.png";
     $frase = "bom dia";
 }else{
     if($hora<18){
-        $fundo = "tarde";
+        $fundo = "tarde.png";
     
         $frase = "boa tarde";
     }else{
-        $fundo = "noite";
+        $fundo = "noite.png";
         $frase = "Boa noite";
     }
 }
@@ -37,7 +37,7 @@ if($administrador=="S"){
     $contaAdministrador = ",seja bem vindo administrador";
     $usuario ="admin.png";
 }
-else{$contaAdministrador = ",seja bem vindo";$usuario ="admin.png";}
+else{$contaAdministrador = ",seja bem vindo";$usuario ="user.png";}
 
 
 ?>
@@ -55,7 +55,7 @@ else{$contaAdministrador = ",seja bem vindo";$usuario ="admin.png";}
         <p>
             <?php echo $frase ?> <?php echo $contaAdministrador?> <strong><?php echo $nome;?></strong>,voce demonstrou interese no cargo de <strong><?php echo $cargo?> </strong>
         </p>
-        <img src="img/<?php echo $fundo?>.png" alt="teste">
-        <img src="img/<?php$usuario?>.png" alt="teste2">
+        <img src="img/<?php echo $fundo?>" alt="teste">
+        <img src="img/<?php echo $usuario?>" alt="teste2">
     </body>
 </html>
