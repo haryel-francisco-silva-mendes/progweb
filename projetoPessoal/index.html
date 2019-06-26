@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>site_experimental</title>
+        <meta cahrset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+
+
+        <style>
+            /*temporario*/
+            .tamanho{
+                height:57px;
+                
+            }
+            main{
+                width:1000px;
+                margin:0 auto;
+               
+            }
+
+            #cabecalho{
+                margin:20px 0;
+                padding:3px 3px;
+                background-color:#ff0;
+                height:200px;
+            }
+
+            .menuFalso{
+                float:left;
+            }
+
+            .logo{
+                float:right;
+            }
+
+
+            /*section*/
+
+            .botaoPost{
+                position: relative;
+                border-radius:100%;
+                padding:12px 12px;
+                margin-left: -5px;
+                background-color: red;
+                margin:0px;
+                line-height: 50px;
+                text-align: center;
+                
+            }
+            
+            #abrirPost{
+                position:absolute;
+                left:-100%;
+            } 
+            .material{
+                margin-top: 20px;
+                padding: 2px 2px;
+                background-color: blue;
+                border-radius: 650px 2px 2px 650px  ;
+            }
+            
+            /*blocagem*/
+
+            .bloco1{
+                width:8.33333333333%;
+                float:left;
+            }
+
+            bloco11{
+                width:91.6666666667%;
+                float:left;
+            }
+        
+         
+
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <header id="cabecalho" >
+                <div class="menuFalso">&#9776;</div>
+                <div class="logo">imagem</div>
+            </header>
+
+            <section class="conteudo">
+                <div class="bloco1">
+                    <form action="index.php" method="post">
+
+                    <input type="checkbox" name="abrirPost" id="abrirPost">
+                    <label for="abrirPost" >
+                    <div class="botaoPost">♦</div>
+                    </label>
+
+                    </form>
+                </div>
+
+                <div class="bloco11">
+                    <div class="row material">
+                       <p >
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur harum omnis molestias commodi illum cumque quisquam a veniam expedita eaque magni 
+                            aperiam ut aspernatur necessitatibus, blanditiis odit, officia ipsa officiis.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <footer id="rodape">
+
+            </footer>
+        </main>
+    </body>
+</html>
