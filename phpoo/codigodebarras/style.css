@@ -1,0 +1,39 @@
+main{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #91d3ff;
+}
+
+#descricao, #barcode{
+    text-align: center;
+    padding: 15px;
+}
+#barcode{
+    border-top: 1px dashed #91d3ff;
+}
+
+#descricao span{
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#descricao p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #525152;
+}
+
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 28px;
+}
+
+input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    width: 80%;
+    margin-top: 10px;
+}
+

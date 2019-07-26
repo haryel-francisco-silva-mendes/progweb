@@ -13,7 +13,7 @@
     $carro->setCor("vermelho");
     $carro->setLigado(false);
     $carro->setVelocidade(0);
-    $carro->setVelocidadeMaxima(700);
+    $carro->setVelocidadeMaxima(130);
 
     echo"CARRO:".$carro->getModelo()."<br><br>";
 

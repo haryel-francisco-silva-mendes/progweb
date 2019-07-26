@@ -78,8 +78,8 @@
         //acelerar
         public function acelerar(){
             echo "INICIANDO ACELERACAO<br>";
-            echo "velocidade atual".$this->velocidade."<br>";
-            echo "velocidade atual".$this->velocidademaxima."<br>";
+            echo "velocidade atual: ".$this->velocidade."<br>";
+            echo "velocidade atual: ".$this->velocidademaxima."<br>";
             if($this->ligado==true){
                 while($this->velocidade<$this->velocidademaxima){
                     echo "ACELERANDO...".$this->velocidade."<br>";
