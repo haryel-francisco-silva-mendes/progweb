@@ -1,9 +1,13 @@
 <?php
-/
+/*
+* 	Descrição do Arquivo
+* 	@autor - João Ricardo Gomes dos Reis
+* 	@data de criação - 09/08/2019
+*/
 
 //Inclui a classe genérica CRUD
 require_once("../../functions/crud.class.php");
-class consultaController extends Crud {
+class ConsultaController extends Crud {
 
     // ATRIBUTOS
     private $tabelafilha = "consulta";
@@ -13,5 +17,8 @@ class consultaController extends Crud {
     //Passa como parâmetro a tabela
         parent::__construct($this->tabelafilha);
     }
+
+    
+
 }
 ?>
