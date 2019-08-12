@@ -1,6 +1,6 @@
 <?php
 
-require_once("../../controller/Produto.controller.class.php");
+require_once("../../controller/Paciente.controller.class.php");
 //Criando as novas instâncias das classes
 $controller = new PacienteController;
 //Método de Listagem
@@ -27,9 +27,10 @@ if(mysqli_num_rows($registro)>0){
         <tr>
             <td><?php echo $reg['id_paciente'];?></td>
             <td><?php echo $reg['nome'];?></td>
-            <td><?php echo substr($reg['sobrenome'],0,10);?>...</td>
+            <td><?php echo $reg['telefone'];?></td>
+            <td><?php echo $reg['celular'];?></td>
             <td><?php echo $reg['email'];?></td>
-            <td><?php echo $reg['plano'];?></td>
+            <td><?php echo $reg['convenio'];?></td>
         </tr>
     <?php
     }

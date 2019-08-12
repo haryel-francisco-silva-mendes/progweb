@@ -1,8 +1,8 @@
 <?php
-/
+
 
 //Inclui a classe genérica CRUD
-require_once("../../functions/crud.class.php");
+require_once("../../function/crud.class.php");
 class MedicoController extends Crud {
 
     // ATRIBUTOS
@@ -14,9 +14,10 @@ class MedicoController extends Crud {
         parent::__construct($this->tabelafilha);
     }
     //pesquisar medico
-    public function pesquisaDeMedico(){
-        $sql = "SELECT * FROM medico WHERE nome LIKE 'me%'";
+    public function pesquisaDeMedico($expressao){
+        $sql = "SELECT * FROM medico WHERE nome LIKE '".$expressao."%'";
         return $this->execute_query($sql);
     }
+    
 }
 ?>
