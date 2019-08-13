@@ -1,8 +1,8 @@
 <?php
-/
+
 
 //Inclui a classe genérica CRUD
-require_once("../../functions/crud.class.php");
+require_once("../../function/crud.class.php");
 class ReceitaController extends Crud {
 
     // ATRIBUTOS

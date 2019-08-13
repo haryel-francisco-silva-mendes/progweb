@@ -26,6 +26,7 @@ if(mysqli_num_rows($registro)>0){
         <tr>
             <td><?php echo $reg['id_medico'];?></td>
             <td><?php echo $reg['nome'];?></td>
+            <td><?php echo $reg['sobrenome'];?></td>
             <td><?php echo $reg['telefone'];?></td>
             <td><?php echo $reg['celular'];?></td>
             <td><?php echo $reg['email'];?></td>
