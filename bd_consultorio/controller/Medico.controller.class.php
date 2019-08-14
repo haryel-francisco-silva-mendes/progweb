@@ -19,5 +19,17 @@ class MedicoController extends Crud {
         return $this->execute_query($sql);
     }
     
+    public function infoDoMedico(){
+        $sql =  "
+        SELECT medico.id_medico,
+        medico.nome,
+        medico.email,
+        usuario.senha,
+        usuario.status
+        FROM medico
+        INNER JOIN  usuario ON  medico.id_usuario = usuario.id_usuario
+        ";
+        return $this->execute_query($sql);
+    }
 }
 ?>

@@ -60,4 +60,4 @@ SELECT * FROM  paciente;
 # DELETE FROM convenio WHERE id_convenio = 1; nunca use delete sem where 
 #delete com condicional 
 DELETE FROM convenio WHERE (id_convenio >=2) AND (id_convenio <=5);
-SELECT * FROM  convenio;bd_consultoriobd_consultorio
+SELECT * FROM  convenio;bd_consultoriobd_consultorioconsulta

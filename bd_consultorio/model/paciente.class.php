@@ -10,13 +10,14 @@
         private $convenio;
        
         // MÉTODO CONSTRUTOR
-        function __construct($p1,$p2,$p3,$p4,$p5) {
+        function __construct($p1,$p2,$p3,$p4,$p5,$p6) {
     
             $this->setId_paciente($p1);
             $this->setTelefone($p2);
             $this->setCelular($p3);
             $this->setNome($p4);
-            $this->setEmail($p5)
+            $this->setEmail($p5);
+            $this->setConvenio($p6);
             return $this;
         }
     
