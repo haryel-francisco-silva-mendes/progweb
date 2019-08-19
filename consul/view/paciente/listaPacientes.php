@@ -9,36 +9,22 @@
 require_once("../../controller/Paciente.controller.class.php");
 //Criando as novas instâncias das classes
 $controller = new PacienteController;
-
+//Método de Listagem
+$registros 	= $controller->select();
 ?>
 
 <!-- Listagem -->
-<?php
-if(isset($_GET["paciente"])){
-    $controller->excluiPaciente($_GET["paciente"]);
-    echo "<h3>Paciente de codigo ".$_GET["paciente"]."foi excluido com sucesso </h3>";
-}
-
-//Método de Listagem
-$registros 	= $controller->select();
-    ?>
-    <a href="cadastraPaciente.php">novo paciente</a>
 <?php
 if(mysqli_num_rows($registros) > 0){
 ?>
     <h1>Listagem da Tabela de Pacientes</h1>
     <table border="1">
-
-    
-    
         <tr>
             <th>Cod</th>
             <th>Nome</th>
             <th>Telefone</th>
             <th>Celular</th>
             <th>E-mail</th>
-            <th>Editar</th>
-            <th>Excluir</th>
         </tr>
     <?php
 	while($reg = mysqli_fetch_array($registros)){
@@ -49,8 +35,6 @@ if(mysqli_num_rows($registros) > 0){
             <td><?php echo $reg['telefone'];?></td>
             <td><?php echo $reg['celular'];?></td>
             <td><?php echo $reg['email'];?></td>
-            <td><a href="editapaciente.php?paciente=<?php echo $reg['id_paciente'];?>">Editar</a></td>
-            <td><a href="?paciente=<?php echo $reg['id_paciente'];?>">Excluir</a></td>
         </tr>
     <?php
     }

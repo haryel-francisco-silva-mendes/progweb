@@ -1,36 +1,34 @@
 <?php
-/*
-* 	Descrição do Arquivo
-* 	@autor - João Ricardo Gomes dos Reis
-* 	@data de criação - 09/08/2019
-*/
-
 //Inclui as classes controladoras
-require_once("../../controller/Paciente.controller.class.php");
+require_once("../../controller/Medico.controller.class.php");
 //Criando as novas instâncias das classes
-$controller = new PacienteController;
+$controller = new MedicoController;
+?>
 
+<?php
+if(isset($_GET["medico"])){
+    $controller->excluiMedico($_GET["medico"]);
+    echo "<h3>O Médico de código ".$_GET["medico"]." foi excluído com sucesso!</h3>";
+}
 ?>
 
 <!-- Listagem -->
 <?php
+
 if(isset($_GET["paciente"])){
     $controller->excluiPaciente($_GET["paciente"]);
-    echo "<h3>Paciente de codigo ".$_GET["paciente"]."foi excluido com sucesso </h3>";
+    echo "<h3>Paciente de codigo ".$_GET["id_paciente"]."foi excluido com sucesso </h3>";
 }
-
+ 
 //Método de Listagem
 $registros 	= $controller->select();
-    ?>
-    <a href="cadastraPaciente.php">novo paciente</a>
-<?php
+
 if(mysqli_num_rows($registros) > 0){
 ?>
-    <h1>Listagem da Tabela de Pacientes</h1>
+    <h1>Listagem da Tabela de Médicos</h1>
+    <a href="cadastramedico.php">Cadastrar Novo Médico</a>
+    <br><br>
     <table border="1">
-
-    
-    
         <tr>
             <th>Cod</th>
             <th>Nome</th>
@@ -44,13 +42,13 @@ if(mysqli_num_rows($registros) > 0){
 	while($reg = mysqli_fetch_array($registros)){
     ?>
         <tr>
-            <td><?php echo $reg['id_paciente'];?></td>
+            <td><?php echo $reg['id_medico'];?></td>
             <td><?php echo $reg['nome'];?></td>
             <td><?php echo $reg['telefone'];?></td>
             <td><?php echo $reg['celular'];?></td>
             <td><?php echo $reg['email'];?></td>
-            <td><a href="editapaciente.php?paciente=<?php echo $reg['id_paciente'];?>">Editar</a></td>
-            <td><a href="?paciente=<?php echo $reg['id_paciente'];?>">Excluir</a></td>
+            <td><a href="editamedico.php?medico=<?php echo $reg['id_medico'];?>">Editar</a></td>
+            <td><a href="?medico=<?php echo $reg['id_medico'];?>">Excluir</a></td>
         </tr>
     <?php
     }
