@@ -6,7 +6,7 @@
 
         $controller->cadastraPaciente($_GET["p1"],$_GET["p2"],$_GET["p3"],$_GET["p4"],$_GET["p5"]);
 
-        header("Location: listapacientes.php");
+        header("Location: listadepaciente.php");
     }
 ?>
 

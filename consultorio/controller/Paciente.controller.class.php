@@ -27,7 +27,7 @@ class PacienteController extends Crud {
     }
 
     //Exibe a quantidade de pacientes cadastrados
-    public function contaMedicos(){
+    public function contaPaciente(){
         $sql = "SELECT COUNT(*) AS total FROM ".$this->tabelafilha."";
         return $this->execute_query($sql);
     }
@@ -59,7 +59,7 @@ class PacienteController extends Crud {
     public function editaPaciente($p0,$p1,$p2,$p3,$p4,$p5){
         $sql =  "UPDATE ".$this->tabelafilha."
                 SET
-                    convenio ='".$p1."'
+                    convenio ='".$p1."',
                     nome = '".$p2."',
                     telefone = '".$p3."',
                     email = '".$p4."',
