@@ -1,16 +1,16 @@
 <?php
-    class Reflection{
+    class Reflections{
         public function convert($object){
             $fields      = array();
             $values     = array();
             $reflection = new ReflectionClass($object);
-            $atributos  = $reflection->getPropertie();
+            $atributos  = $reflection->getProperties();
             
             foreach ($atributos as $atributo){
                 $atributo->setAccessible(true);
                 if($atributo->getValue($object)){
                     array_push($fields,$atributo->getName());
-                    array_push($values,$areibuto->getValue($object));
+                    array_push($values,$atributo->getValue($object));
                 }
             }
 

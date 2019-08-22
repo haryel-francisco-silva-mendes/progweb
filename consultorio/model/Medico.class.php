@@ -3,21 +3,15 @@ class Medico {
 
     // ATRIBUTOS
     private $id_medico;
+    private $id_usuario;
     private $nome;
     private $telefone;
     private $celular;
     private $email;
 
     // MÉTODO CONSTRUTOR
-    function __construct($p1,$p2,$p3,$p4,$p5) {
+    function __construct() {
 
-        $this->setId_medico($p1);
-        $this->setNome($p2);
-        $this->setTelefone($p3);
-        $this->setCelular($p4);
-        $this->setEmail($p5);
-
-        return $this;
     }
 
     // MÉTODOS GETTERS E SETTERS
@@ -29,6 +23,15 @@ class Medico {
     public function setId_medico($id_medico){
         $this->id_medico = $id_medico;
     }
+
+    public function getId_usuario(){
+        return $this->id_usuario;
+    }
+
+    public function setId_usuario($id_usuario){
+        $this->id_usuario = $id_usuario;
+    }
+
 
     public function getNome(){
         return $this->nome;

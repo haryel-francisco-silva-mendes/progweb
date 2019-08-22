@@ -7,8 +7,8 @@
  */
 
 //Importa as classes
-require_once("../../functions/Reflections.class.php");
-require_once("../../functions/connection.class.php");
+require_once("../../function/Reflections.class.php");
+require_once("../../function/connection.class.php");
 
 abstract class Crud {
 
