@@ -19,6 +19,11 @@
                     <span>(19) 3622-1234</span>
                 </div>
             </div>
+            <?php
+                session_start();
+                if(isset($_SESSION["logado"])){
+
+            ?>
             <nav>
                 <ul>
                     <li><a href="#">Link 1</a></li>
@@ -26,4 +31,9 @@
                     <li><a href="#">Link 3</a></li>
                 </ul>
             </nav>
+            <?php
+                }else{
+                    echo "<p>Bem vindo faca seu login</p>";
+                }
+            ?>
         </header>
