@@ -45,17 +45,41 @@
                 <section class="post">
                     <header>
                         <h1><?php echo $post->titulo; ?></h1>
-                        <span><?php echo $post->data;?></span>
+                        <span><?php echo date("d/m/y h:i",strtotime($post->data));?></span>
                         <h2><?php echo $post->nome; ?></h2>
                     </header>
+
+                    <?php
+                        $sqlCat = "SELECT * FROM categoria 
+                        INNER JOIN item_categoria ON item_categoria.id_cat = categoria.id_categoria
+                        WHERE id_post = $post->id_post";
+
+                        try{
+                            $resultado = $conexao->prepare($sqlCat);
+                            $resultado->execute();
+                            $contar = $resultado->rowCount();
+                            if($contar>0){
+                                $exibeCat = $resultado->fetchAll(PDO::FETCH_OBJ);
+                            }
+                        }
+                        catch(PDOExeption $erro){
+                            echo erro;
+                        }
+                    ?>
+
                     <div class="cat">
-                        <span class="categoria">cat</span>
-                        <span class="categoria">cat2</span>
+                        <?php
+                            foreach($exibeCat as $teste){
+                                ?>
+                                <span class="categoria"><?php echo $teste->nome; ?></span>
+                                <?php
+                            }
+                        ?>
                     </div>
                     <img src="http://via.placeholder.com/1280x250" alt="">
                    
-                    <?php echo LimitarTexto($post->conteudo, $limite=100); ?>
-                    <a href="">Leia mais[...]</a>
+                    <?php echo LimitarTexto($post->conteudo, $limite=50); ?>
+                    <a href="post.php?post=<?php echo $post->id_post; ?>">Leia mais[...]</a>
 
                 </section>   
             <?php
