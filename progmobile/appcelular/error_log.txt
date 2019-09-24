@@ -1,0 +1,33 @@
+[09-Sep-2019 14:28:41 Europe/Berlin] PHP Warning:  Use of undefined constant E_all - assumed 'E_all' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\dev2019\progmobile\appcelular\pergunta.php on line 5
+[09-Sep-2019 10:08:07 America/Sao_Paulo] PHP Notice:  Undefined variable: sql in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 29
+[09-Sep-2019 10:08:07 America/Sao_Paulo] PHP Warning:  mysqli::query(): Empty query in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 29
+[09-Sep-2019 10:08:07 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 35
+[09-Sep-2019 10:08:07 America/Sao_Paulo] PHP Notice:  Undefined variable: ranking in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 43
+[09-Sep-2019 10:13:03 America/Sao_Paulo] PHP Notice:  Undefined variable: sql in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 29
+[09-Sep-2019 10:13:03 America/Sao_Paulo] PHP Warning:  mysqli::query(): Empty query in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 29
+[09-Sep-2019 10:13:03 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 35
+[09-Sep-2019 10:13:03 America/Sao_Paulo] PHP Notice:  Undefined variable: ranking in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 43
+[09-Sep-2019 10:16:30 America/Sao_Paulo] PHP Notice:  Undefined variable: id_usuario in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 25
+[09-Sep-2019 10:16:30 America/Sao_Paulo] PHP Notice:  Undefined variable: id_pergunta in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 25
+[09-Sep-2019 10:16:30 America/Sao_Paulo] PHP Notice:  Undefined variable: resposta in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 25
+[09-Sep-2019 10:16:30 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 35
+[09-Sep-2019 10:16:30 America/Sao_Paulo] PHP Notice:  Undefined variable: ranking in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 43
+[09-Sep-2019 11:47:30 America/Sao_Paulo] PHP Notice:  Undefined index: id_usuario in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 19
+[09-Sep-2019 11:47:30 America/Sao_Paulo] PHP Notice:  Undefined index: id_pergunta in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 20
+[09-Sep-2019 11:47:30 America/Sao_Paulo] PHP Notice:  Undefined index: resposta in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 21
+[09-Sep-2019 11:47:30 America/Sao_Paulo] PHP Warning:  Use of undefined constant id_pergunta - assumed 'id_pergunta' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 25
+[09-Sep-2019 11:47:30 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 27
+[09-Sep-2019 11:50:58 America/Sao_Paulo] PHP Warning:  Use of undefined constant id_pergunta - assumed 'id_pergunta' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 26
+[09-Sep-2019 11:54:12 America/Sao_Paulo] PHP Warning:  Use of undefined constant id_pergunta - assumed 'id_pergunta' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 26
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli::__construct(): (HY000/2002): Nenhuma conex�o p�de ser feita porque a m�quina de destino as recusou ativamente.
+ in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 13
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 15
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 16
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 17
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 18
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 28
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 31
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 65
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 71
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Notice:  Undefined variable: ranking in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 79
+[12-Sep-2019 09:00:35 America/Sao_Paulo] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in C:\xampp\htdocs\dev2019\progmobile\appcelular\resposta.php on line 87
